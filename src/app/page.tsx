@@ -55,7 +55,8 @@ const TestPage = () => {
                         setTimeout(() => {
                             setText('Do you love me ?');
                             if (buttonBox) {
-                                buttonBox.style.display = 'flex';
+                              buttonBox.style.display = 'flex';
+                              noButtonRef.current?.style.removeProperty('position');
                             }
                         }, 5000);
                     }} className='px-3 py-2 text-white rounded-xl bg-green-500'>Yes</button>
